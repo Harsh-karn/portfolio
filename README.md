@@ -1,7 +1,36 @@
-# My Portfolio Website - Overview 🚀
+# Harsh Karn — Portfolio Website 🚀
 
-This repository contains the open-source version of my personal portfolio website.  
-Feel free to explore the code and use it for learning and inspiration.
+A modern, interactive 3D portfolio website built with React, TypeScript, Three.js, and GSAP.
+
+**Full Stack Developer | Data Analyst**
+
+---
+
+## ⚙️ Tech Stack
+
+React • TypeScript • GSAP • Three.js • WebGL • HTML • CSS • JavaScript
+
+---
+
+## 🛠️ Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+```
+
+---
+
+## 🔗 Connect With Me
+
+- **Email:** harshkarn12345@gmail.com
+- **LinkedIn:** [harsh-karn-](https://www.linkedin.com/in/harsh-karn-/)
+- **GitHub:** [Harsh-karn](https://github.com/Harsh-karn)
+- **Reddit:** [heyy_harsh](https://www.reddit.com/user/heyy_harsh/)
+- **Instagram:** [harsh.un.filtered](https://www.instagram.com/harsh.un.filtered/)
 
 ---
 
@@ -13,47 +42,12 @@ Please do NOT:
 - Clone or replicate the full website or design
 - Repost it with minor content changes
 - Use this project for commercial/client work
-- Create tutorials or content using this exact project
 
-If you use parts of the code, you must provide proper credit linking back to the original repository.
+If you use parts of the code, please provide proper credit.
 
-Build your own version — don’t just copy.
+Build your own version — don't just copy.
 
 — Harsh Karn
-
----
-
-## 🛠️ Instructions
-
-I have modified the GSAP Club plugins using trial versions.  
-⚠️ Note: Trial plugins cannot be used for production or hosting.
-
-For official GSAP Club plugins, refer here:  
-https://gsap.com/docs/v3/Installation/
-
----
-
-## ⚙️ Tech Stack
-
-React • TypeScript • GSAP • Three.js • WebGL • HTML • CSS • JavaScript
-
----
-
-## 🎨 Assets Usage
-
-Some 3D assets included in this repository are free to use for learning purposes.
-
-However:
-
-- The original 3D avatar used on my live portfolio is NOT included in this repository
-- That avatar is a custom asset created over ~1 month
-- It is not open source and not available for reuse
-
-Any usage, extraction, or redistribution of that avatar from my live website is strictly prohibited.
-
----
-
-![Protfolio-Preview](https://github.com/user-attachments/assets/3c4557e7-6392-4928-b8a9-7b2476ef4edd)
 
 ---
 
@@ -61,5 +55,4 @@ Any usage, extraction, or redistribution of that avatar from my live website is 
 
 This project is licensed under the Personal Portfolio License (PPL) v1.0.
 
-See the LICENSE file for full details
-
+See the [LICENSE](LICENSE) file for full details.
