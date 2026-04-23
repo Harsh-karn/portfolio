@@ -6,7 +6,7 @@ A modern, interactive 3D portfolio website built with React, TypeScript, Three.j
 
 ---
 
-![Portfolio Preview](preview.png)
+![Portfolio Preview](public/images/preview.png)
 
 ---
 
