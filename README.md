@@ -6,6 +6,10 @@ A modern, interactive 3D portfolio website built with React, TypeScript, Three.j
 
 ---
 
+![Portfolio Preview](preview.png)
+
+---
+
 ## ⚙️ Tech Stack
 
 React • TypeScript • GSAP • Three.js • WebGL • HTML • CSS • JavaScript
