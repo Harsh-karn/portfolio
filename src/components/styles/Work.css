@@ -212,3 +212,54 @@
     height: auto;
   }
 }
+
+/* Project link buttons */
+.work-project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.work-project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: background-color 0.25s, color 0.25s, transform 0.2s, box-shadow 0.25s;
+  border: 1px solid #363636;
+  color: #adacac;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.work-project-btn svg {
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.work-project-btn--github:hover {
+  background-color: #f0f6ff;
+  color: #0d1117;
+  border-color: #f0f6ff;
+  box-shadow: 0 0 12px rgba(240, 246, 255, 0.18);
+  transform: translateY(-2px);
+}
+
+.work-project-btn--live {
+  color: var(--accentColor);
+  border-color: var(--accentColor);
+}
+
+.work-project-btn--live:hover {
+  background-color: var(--accentColor);
+  color: #000;
+  box-shadow: 0 0 14px rgba(var(--accentColor-rgb, 255, 255, 255), 0.25);
+  transform: translateY(-2px);
+}
+

@@ -8,24 +8,6 @@ const Contact = () => {
         <h3>Contact</h3>
         <div className="contact-flex">
           <div className="contact-box">
-            <h4>Email</h4>
-            <p>
-              <a href="mailto:harshkarn12345@gmail.com" data-cursor="disable">
-                harshkarn12345@gmail.com
-              </a>
-            </p>
-            <h4>Phone</h4>
-            <p>
-              <a href="tel:+919523330382" data-cursor="disable">
-                +91 95233 30382
-              </a>
-              <br />
-              <a href="tel:+919302862656" data-cursor="disable">
-                +91 93028 62656
-              </a>
-            </p>
-          </div>
-          <div className="contact-box">
             <h4>Social</h4>
             <a
               href="https://github.com/Harsh-karn"
@@ -60,12 +42,30 @@ const Contact = () => {
               Instagram <MdArrowOutward />
             </a>
           </div>
+          <div className="contact-box">
+            <h4>Email</h4>
+            <p>
+              <a href="mailto:harshkarn12345@gmail.com" data-cursor="disable">
+                harshkarn12345@gmail.com
+              </a>
+            </p>
+            <h4>Phone</h4>
+            <p>
+              <a href="tel:+919523330382" data-cursor="disable">
+                +91 95233 30382
+              </a>
+              <br />
+              <a href="tel:+919302862656" data-cursor="disable">
+                +91 93028 62656
+              </a>
+            </p>
+          </div>
           <div className="contact-box contact-credit-box">
             <h2>
               Designed and Developed <br /> by <span>Harsh Karn</span>
             </h2>
             <h5>
-              <MdCopyright /> 2024
+              <MdCopyright /> 2026
             </h5>
           </div>
         </div>

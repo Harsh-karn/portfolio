@@ -1,19 +1,17 @@
 .contact-section {
   margin: auto;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: var(--backgroundColor);
   position: relative;
   z-index: 10;
-  padding: 100px 0;
+  padding: 80px 0 50px;
   box-sizing: border-box;
 }
 .contact-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
   flex-grow: 1;
 }
@@ -96,6 +94,7 @@ a.contact-social {
 @media only screen and (max-width: 900px) {
   .contact-flex {
     flex-direction: column;
+    align-items: flex-start;
     gap: 40px;
   }
   .contact-flex p {
@@ -110,5 +109,10 @@ a.contact-social {
   }
   .contact-container {
     width: calc(100% - 25px);
+  }
+  .contact-credit-box {
+    text-align: left;
+    align-items: flex-start;
+    margin-top: 20px;
   }
 }
