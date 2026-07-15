@@ -6,11 +6,11 @@ import { projects } from "../data/projects";
 
 const Work = () => {
   const [showAll, setShowAll] = useState(false);
-  const displayProjects = showAll ? projects : projects.slice(0, 6);
+  const displayProjects = showAll ? projects : projects.slice(0, 10);
 
   return (
     <div className="work-section" id="work">
-      <div className="section-container">
+      <div className="full-width-container">
         <h2>
           Featured <span>Work</span>
         </h2>
@@ -60,7 +60,7 @@ const Work = () => {
           ))}
         </div>
         
-        {!showAll && projects.length > 6 && (
+        {!showAll && projects.length > 10 && (
           <button 
             className="view-more-btn"
             onClick={() => setShowAll(true)}

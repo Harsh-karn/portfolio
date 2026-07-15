@@ -17,7 +17,7 @@ export const projects: Project[] = [
     techStack: ["FastAPI", "PostgreSQL", "Celery", "Kotlin", "Next.js"],
     github: "https://github.com/Harsh-karn/Fynlo",
     liveLink: null,
-    image: "/images/placeholder.webp",
+    image: "/images/fynlo.png",
     featured: true,
   },
   {
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     techStack: ["FastAPI", "Gemini API", "Python"],
     github: "https://github.com/Harsh-karn/AI-Lead-Intake-Automation",
     liveLink: "https://simplif-iq.vercel.app",
-    image: "/images/placeholder.webp",
+    image: "/images/ai_lead_intake.png",
     featured: true,
   },
   {
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     techStack: ["FastAPI", "FAISS", "Sentence-Transformers"],
     github: "https://github.com/Harsh-karn/Pulse-RAG---QuantGPT-Engine",
     liveLink: null,
-    image: "/images/placeholder.webp",
+    image: "/images/pulserag.png",
     featured: true,
   },
   {
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     techStack: ["TypeScript", "Next.js", "AI", "Tailwind"],
     github: "https://github.com/Harsh-karn/LeadMorph-AI",
     liveLink: "https://lead-morph-ai.vercel.app",
-    image: "/images/placeholder.webp",
+    image: "/images/leadmorph.png",
     featured: false,
   },
   {
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     techStack: ["Python", "FastAPI", "Redis"],
     github: "https://github.com/Harsh-karn/SHORTR",
     liveLink: null,
-    image: "/images/placeholder.webp",
+    image: "/images/shortr.png",
     featured: false,
   },
   {
@@ -87,7 +87,7 @@ export const projects: Project[] = [
     techStack: ["Python", "Web Scraping", "Automation"],
     github: "https://github.com/Harsh-karn/Multi-Platform-Job-Search-Workflow-Automation",
     liveLink: null,
-    image: "/images/placeholder.webp",
+    image: "/images/job_search.png",
     featured: false,
   },
   {
@@ -97,7 +97,7 @@ export const projects: Project[] = [
     techStack: ["JavaScript", "Node.js", "WebSockets"],
     github: "https://github.com/Harsh-karn/OrderSync",
     liveLink: null,
-    image: "/images/placeholder.webp",
+    image: "/images/ordersync.png",
     featured: false,
   },
   {
@@ -107,7 +107,7 @@ export const projects: Project[] = [
     techStack: ["Python", "GenAI", "NLP"],
     github: "https://github.com/Harsh-karn/Discharge-Summary-AI",
     liveLink: null,
-    image: "/images/placeholder.webp",
+    image: "/images/discharge_summary_ai.png",
     featured: false,
   },
   {
@@ -117,7 +117,7 @@ export const projects: Project[] = [
     techStack: ["Python", "Pandas", "Matplotlib"],
     github: "https://github.com/Harsh-karn/Case_Study_Lead_Quality_EDA",
     liveLink: null,
-    image: "/images/placeholder.webp",
+    image: "/images/lead_quality_eda.png",
     featured: false,
   },
   {
@@ -127,7 +127,7 @@ export const projects: Project[] = [
     techStack: ["Python", "Agentic AI", "LLMs"],
     github: "https://github.com/Harsh-karn/Fact_Check-Agent",
     liveLink: null,
-    image: "/images/placeholder.webp",
+    image: "/images/fact_check_agent.png",
     featured: false,
   },
   {
@@ -137,7 +137,7 @@ export const projects: Project[] = [
     techStack: ["TypeScript", "React", "Node.js"],
     github: "https://github.com/Harsh-karn/Chatbot-Application",
     liveLink: null,
-    image: "/images/placeholder.webp",
+    image: "/images/custom_chatbot.png",
     featured: false,
   },
   {
@@ -147,7 +147,7 @@ export const projects: Project[] = [
     techStack: ["Python", "Benchmarking", "AI"],
     github: "https://github.com/Harsh-karn/DualAssist-Benchmark",
     liveLink: null,
-    image: "/images/placeholder.webp",
+    image: "/images/dualassist_benchmark.png",
     featured: false,
   },
   {
@@ -157,7 +157,7 @@ export const projects: Project[] = [
     techStack: ["Python", "WhatsApp API", "LLMs"],
     github: "https://github.com/Harsh-karn/Whatsapp-AI-agent",
     liveLink: null,
-    image: "/images/placeholder.webp",
+    image: "/images/whatsapp_ai.png",
     featured: false,
   },
   {

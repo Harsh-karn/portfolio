@@ -1,8 +1,8 @@
 export const profile = {
   name: "Harsh Karn",
   roles: [
-    "Full Stack Developer",
-    "Backend Engineer",
+    "Full Stack\nDeveloper",
+    "Backend\nEngineer",
     "Data Analyst",
     "AI Engineer",
   ],

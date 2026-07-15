@@ -28,9 +28,9 @@ const techCategories = [
       { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
       { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
       { name: "Express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" },
-      { name: "REST APIs", icon: "", isTextOnly: true },
-      { name: "WebSockets", icon: "", isTextOnly: true },
-      { name: "JWT Auth", icon: "", isTextOnly: true },
+      { name: "REST APIs", icon: "https://api.iconify.design/carbon/api.svg?color=white" },
+      { name: "WebSockets", icon: "https://api.iconify.design/logos/websocket.svg" },
+      { name: "JWT Auth", icon: "https://cdn.simpleicons.org/jsonwebtokens/white" },
     ]
   },
   {
@@ -46,13 +46,12 @@ const techCategories = [
   {
     title: "AI / LLM",
     skills: [
-      { name: "Gemini", icon: "", isTextOnly: true },
-      { name: "GPT-4", icon: "", isTextOnly: true },
-      { name: "Groq", icon: "", isTextOnly: true },
-      { name: "RAG", icon: "", isTextOnly: true },
-      { name: "FAISS", icon: "", isTextOnly: true },
-      { name: "Sentence-Transformers", icon: "", isTextOnly: true },
-      { name: "Ollama", icon: "", isTextOnly: true },
+      { name: "Gemini", icon: "https://cdn.simpleicons.org/googlegemini/white" },
+      { name: "GPT-4", icon: "https://api.iconify.design/logos/openai-icon.svg" },
+      { name: "Claude", icon: "https://cdn.simpleicons.org/anthropic/white" },
+      { name: "RAG", icon: "https://api.iconify.design/carbon/machine-learning-model.svg?color=white" },
+      { name: "Sentence-Transformers", icon: "https://cdn.simpleicons.org/huggingface" },
+      { name: "Ollama", icon: "https://cdn.simpleicons.org/ollama/white" },
     ]
   },
   {
@@ -62,9 +61,9 @@ const techCategories = [
       { name: "NumPy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" },
       { name: "scikit-learn", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" },
       { name: "Matplotlib", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" },
-      { name: "Excel", icon: "", isTextOnly: true },
-      { name: "Power BI", icon: "", isTextOnly: true },
-      { name: "Tableau", icon: "", isTextOnly: true },
+      { name: "Excel", icon: "https://api.iconify.design/vscode-icons/file-type-excel.svg" },
+      { name: "Power BI", icon: "https://api.iconify.design/logos/microsoft-power-bi.svg" },
+      { name: "Tableau", icon: "https://api.iconify.design/logos/tableau-icon.svg" },
     ]
   },
   {
@@ -81,7 +80,7 @@ const techCategories = [
     skills: [
       { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
       { name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" },
-      { name: "Celery", icon: "", isTextOnly: true },
+      { name: "Celery", icon: "https://cdn.simpleicons.org/celery/white" },
       { name: "SQLAlchemy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg" },
       { name: "Prisma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" },
     ]
@@ -91,7 +90,7 @@ const techCategories = [
 const TechStack = () => {
   return (
     <div className="techstack-section" id="techstack">
-      <div className="section-container">
+      <div className="full-width-container">
         <h2>
           My <span>Techstack</span>
         </h2>
@@ -103,11 +102,7 @@ const TechStack = () => {
               <div className="tech-grid">
                 {category.skills.map((skill, i) => (
                   <div className="tech-icon-container" key={i} title={skill.name}>
-                    {skill.isTextOnly ? (
-                      <span className="tech-text">{skill.name}</span>
-                    ) : (
-                      <img src={skill.icon} alt={skill.name} loading="lazy" />
-                    )}
+                    <img src={skill.icon} alt={skill.name} loading="lazy" />
                   </div>
                 ))}
               </div>
