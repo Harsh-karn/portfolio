@@ -87,8 +87,7 @@ const WhatIDo = () => {
                 <h3>DEVELOP</h3>
                 <h4>Description</h4>
                 <p>
-                  I build end-to-end web applications that are fast, scalable,
-                  and built to solve real problems.
+                  I cook up scalable full-stack web apps and plug in AI to solve real problems.
                 </p>
                 <h5>Skillset & tools</h5>
                 <div className="what-content-flex">
@@ -122,11 +121,10 @@ const WhatIDo = () => {
               </div>
               <div className="what-corner"></div>
               <div className="what-content-in">
-                <h3>DATA ANALYSIS</h3>
+                <h3>DATA</h3>
                 <h4>Description</h4>
                 <p>
-                  I analyze data to uncover patterns, trends, and insights that
-                  solve real-world problems.
+                  I crunch massive datasets to spot trends and drop some serious data-driven insights.
                 </p>
                 <h5>Skillset & tools</h5>
                 <div className="what-content-flex">

@@ -21,10 +21,9 @@ const Career = () => {
               <h3>2025</h3>
             </div>
             <p>
-              Analyzed large-scale industrial datasets to identify operational
-              trends and provide data-driven insights for improving production
-              efficiency. Worked with SQL and Python for data preprocessing and
-              visualization.
+              Deep dived into massive industrial datasets to spot hidden trends and 
+              drop actionable insights that leveled up production efficiency. 
+              Mainly cooked with SQL and Python to clean up the data and build slick visuals.
             </p>
           </div>
           <div className="career-info-box">
@@ -36,9 +35,9 @@ const Career = () => {
               <h3>2025</h3>
             </div>
             <p>
-              Focused on building end-to-end web applications using the MERN
-              stack and developing interactive data dashboards using Streamlit
-              and Python.
+              Built out end-to-end web apps from scratch using the MERN stack 
+              and spun up interactive data dashboards with Streamlit and Python. 
+              All about shipping clean code and turning raw data into absolute Win.
             </p>
           </div>
           <div className="career-info-box">
@@ -50,9 +49,9 @@ const Career = () => {
               <h3>NOW</h3>
             </div>
             <p>
-              Actively seeking opportunities to contribute as a Full Stack
-              Developer or Data Analyst. Ready to apply my technical skills to
-              solve real-world challenges.
+              On the hunt for roles where I can jump in as a Full Stack Dev, 
+              AI Engineer, or Data Analyst. Fully locked in and ready to leverage 
+              my tech stack to tackle real-world problems and ship absolute Win.
             </p>
           </div>
         </div>

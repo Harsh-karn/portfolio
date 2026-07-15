@@ -2,7 +2,7 @@
 
 A modern, interactive 3D portfolio website built with React, TypeScript, Three.js, and GSAP.
 
-**Full Stack Developer | Data Analyst**
+**Full Stack Developer | AI Engineer | Data Analyst**
 
 ### 🌐 Live Demo: [harsh-karn.vercel.app](https://harsh-karn.vercel.app/)
 
