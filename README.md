@@ -33,7 +33,7 @@ npm run dev
 ## 🔗 Connect With Me
 
 - **Email:** harshkarn12345@gmail.com
-- **LinkedIn:** [harsh-karn-](https://www.linkedin.com/in/harsh-karn-/)
+- **LinkedIn:** [harsh-karn-](https://www.linkedin.com/in/harsh-karn--/)
 - **GitHub:** [Harsh-karn](https://github.com/Harsh-karn)
 - **Reddit:** [heyy_harsh](https://www.reddit.com/user/heyy_harsh/)
 - **Instagram:** [harsh.un.filtered](https://www.instagram.com/harsh.un.filtered/)
