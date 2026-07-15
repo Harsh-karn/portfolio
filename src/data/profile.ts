@@ -1,0 +1,25 @@
+export const profile = {
+  name: "Harsh Karn",
+  roles: [
+    "Full Stack Developer",
+    "Backend Engineer",
+    "Data Analyst",
+    "AI Engineer",
+  ],
+  valueProposition: "I build robust, AI-powered applications from database design to modern frontend interfaces.",
+  linkedin: "https://www.linkedin.com/in/harsh-karn--",
+  github: "https://github.com/Harsh-karn",
+  resume: "/RESUME_HARSH_KARN.pdf",
+  email: "harshkarn12345@gmail.com",
+  techStackImages: [
+    "/images/react2.webp",
+    "/images/next2.webp",
+    "/images/node2.webp",
+    "/images/express.webp",
+    "/images/mongo.webp",
+    "/images/mysql.webp",
+    "/images/typescript.webp",
+    "/images/javascript.webp",
+    "/images/python.webp",
+  ],
+};

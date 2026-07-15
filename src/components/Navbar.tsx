@@ -3,6 +3,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { profile } from "../data/profile";
 import "./styles/Navbar.css";
 
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
@@ -46,11 +47,11 @@ const Navbar = () => {
           <img src="/images/logo.png" alt="Logo" />
         </a>
         <a
-          href="mailto:HARSHKARN12345@GMAIL.COM"
+          href={`mailto:${profile.email}`}
           className="navbar-connect"
           data-cursor="disable"
         >
-          HARSHKARN12345@GMAIL.COM
+          {profile.email.toUpperCase()}
         </a>
         <ul>
           <li>

@@ -1,0 +1,113 @@
+.techstack-section {
+  padding-top: 20px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 5;
+  background-color: var(--backgroundColor);
+  width: 100%;
+}
+
+.techstack-section h2 {
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.techstack-section h2 span {
+  color: var(--accentColor);
+}
+
+.tech-categories-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tech-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #adacac;
+  margin-bottom: 25px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.tech-icon-container {
+  width: 85px;
+  height: 85px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tech-icon-container img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.7);
+  transition: all 0.3s ease;
+}
+
+.tech-text {
+  font-size: 11px;
+  color: #888;
+  text-align: center;
+  font-weight: 500;
+  word-wrap: break-word;
+  transition: all 0.3s ease;
+}
+
+.tech-icon-container:hover {
+  transform: translateY(-8px);
+  border-color: rgba(196, 129, 255, 0.4);
+  box-shadow: 0 10px 25px rgba(196, 129, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.tech-icon-container:hover img {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.1);
+}
+
+.tech-icon-container:hover .tech-text {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px) {
+  .tech-icon-container {
+    width: 75px;
+    height: 75px;
+  }
+  .techstack-section h2 {
+    font-size: 40px;
+  }
+  .category-title {
+    font-size: 18px;
+  }
+}

@@ -1,4 +1,5 @@
 import { MdArrowOutward, MdCopyright } from "react-icons/md";
+import { profile } from "../data/profile";
 import "./styles/Contact.css";
 
 const Contact = () => {
@@ -10,7 +11,7 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com/Harsh-karn"
+              href={profile.github}
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -18,7 +19,7 @@ const Contact = () => {
               Github <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/in/harsh-karn-/"
+              href={profile.linkedin}
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -45,8 +46,8 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Email</h4>
             <p>
-              <a href="mailto:harshkarn12345@gmail.com" data-cursor="disable">
-                harshkarn12345@gmail.com
+              <a href={`mailto:${profile.email}`} data-cursor="disable">
+                {profile.email}
               </a>
             </p>
             <h4>Phone</h4>

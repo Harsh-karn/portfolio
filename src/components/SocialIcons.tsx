@@ -8,6 +8,7 @@ import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
 import HoverLinks from "./HoverLinks";
+import { profile } from "../data/profile";
 
 const SocialIcons = () => {
   useEffect(() => {
@@ -60,12 +61,12 @@ const SocialIcons = () => {
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a href="https://github.com/Harsh-karn" target="_blank">
+          <a href={profile.github} target="_blank">
             <FaGithub />
           </a>
         </span>
         <span>
-          <a href="https://www.linkedin.com/in/harsh-karn-/" target="_blank">
+          <a href={profile.linkedin} target="_blank">
             <FaLinkedinIn />
           </a>
         </span>
@@ -80,7 +81,7 @@ const SocialIcons = () => {
           </a>
         </span>
       </div>
-      <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+      <a className="resume-button" href={profile.resume} target="_blank" rel="noopener noreferrer">
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />

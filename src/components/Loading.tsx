@@ -3,6 +3,7 @@ import "./styles/Loading.css";
 import { useLoading } from "../context/LoadingProvider";
 
 import Marquee from "react-fast-marquee";
+import { profile } from "../data/profile";
 
 const Loading = ({ percent }: { percent: number }) => {
   const { setIsLoading } = useLoading();
@@ -62,8 +63,12 @@ const Loading = ({ percent }: { percent: number }) => {
       <div className="loading-screen">
         <div className="loading-marquee">
           <Marquee>
-            <span> Full Stack Developer</span> <span>Data Analyst</span>
-            <span> Full Stack Developer</span> <span>Data Analyst</span>
+            {profile.roles.map((role, index) => (
+              <span key={index}> {role} </span>
+            ))}
+            {profile.roles.map((role, index) => (
+              <span key={`dup-${index}`}> {role} </span>
+            ))}
           </Marquee>
         </div>
         <div

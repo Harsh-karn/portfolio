@@ -48,8 +48,8 @@
   z-index: 99;
   display: flex;
   gap: 5px;
-  bottom: 40px;
-  right: 0;
+  bottom: 60px;
+  right: 20px;
   width: auto;
   text-wrap: nowrap;
   letter-spacing: 4px;

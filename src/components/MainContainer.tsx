@@ -9,7 +9,9 @@ import SocialIcons from "./SocialIcons";
 import WhatIDo from "./WhatIDo";
 import Work from "./Work";
 import setSplitText from "./utils/splitText";
-import TechStack from "./TechStack";
+import { lazy, Suspense } from "react";
+
+const TechStack = lazy(() => import("./TechStack"));
 
 const MainContainer = ({ children }: PropsWithChildren) => {
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
@@ -42,7 +44,9 @@ const MainContainer = ({ children }: PropsWithChildren) => {
             <WhatIDo />
             <Career />
             <Work />
-            <TechStack />
+            <Suspense fallback={<div style={{ height: '50vh' }}></div>}>
+              <TechStack />
+            </Suspense>
             <Contact />
           </div>
         </div>
