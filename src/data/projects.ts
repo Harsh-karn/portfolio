@@ -197,7 +197,7 @@ export const projects: Project[] = [
     techStack: ["TypeScript", "React", "GSAP"],
     github: "https://github.com/Harsh-karn/Kinetic-Gallery",
     liveLink: "https://kinetic-gallery-pink.vercel.app",
-    image: "/images/placeholder.webp",
+    image: "/images/kinetic_gallery.png",
     featured: false,
   },
   {
@@ -207,7 +207,7 @@ export const projects: Project[] = [
     techStack: ["TypeScript", "Canvas API", "React"],
     github: "https://github.com/Harsh-karn/ACSII-camera",
     liveLink: "https://acsii-camera.vercel.app",
-    image: "/images/placeholder.webp",
+    image: "/images/ascii_camera.png",
     featured: false,
   }
 ];
