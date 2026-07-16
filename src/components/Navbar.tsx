@@ -1,15 +1,18 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { profile } from "../data/profile";
+import { HiDotsVertical } from "react-icons/hi";
 import "./styles/Navbar.css";
 
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 export let smoother: ScrollSmoother;
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     smoother = ScrollSmoother.create({
       wrapper: "#smooth-wrapper",
@@ -33,6 +36,8 @@ const Navbar = () => {
           let elem = e.currentTarget as HTMLAnchorElement;
           let section = elem.getAttribute("data-href");
           smoother.scrollTo(section, true, "top top");
+        } else {
+          setMenuOpen(false); // Close menu on mobile click
         }
       });
     });
@@ -53,28 +58,38 @@ const Navbar = () => {
         >
           {profile.email.toUpperCase()}
         </a>
-        <ul>
-          <li>
-            <a data-href="#about" href="#about">
-              <HoverLinks text="ABOUT" />
-            </a>
-          </li>
-          <li>
-            <a data-href="#work" href="#work">
-              <HoverLinks text="PROJECTS" />
-            </a>
-          </li>
-          <li>
-            <a data-href="#techstack" href="#techstack">
-              <HoverLinks text="TECHSTACK" />
-            </a>
-          </li>
-          <li>
-            <a data-href="#contact" href="#contact">
-              <HoverLinks text="CONTACT" />
-            </a>
-          </li>
-        </ul>
+        
+        <div className="navbar-menu-container">
+          <button 
+            className="navbar-toggle" 
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            <HiDotsVertical size={24} />
+          </button>
+          <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
+            <li>
+              <a data-href="#about" href="#about">
+                <HoverLinks text="ABOUT" />
+              </a>
+            </li>
+            <li>
+              <a data-href="#work" href="#work">
+                <HoverLinks text="PROJECTS" />
+              </a>
+            </li>
+            <li>
+              <a data-href="#techstack" href="#techstack">
+                <HoverLinks text="TECHSTACK" />
+              </a>
+            </li>
+            <li>
+              <a data-href="#contact" href="#contact">
+                <HoverLinks text="CONTACT" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div className="landing-circle1"></div>

@@ -42,6 +42,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0 20px;
+  color: #ccc;
+  text-decoration: none;
 }
 .navbar-logo {
   display: flex;
@@ -61,6 +63,17 @@
   width: 100%;
   object-fit: cover;
 }
+
+.navbar-menu-container {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
 @media only screen and (min-width: 500px) {
   .header {
     padding: 20px 0px;
@@ -73,8 +86,8 @@
   .header ul li {
     color: #eae5ec;
   }
-
 }
+
 @media only screen and (min-width: 1200px) {
   .header {
     padding: 35px 0px;
@@ -91,5 +104,56 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-connect {
+    display: block;
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+  }
+  .navbar-logo {
+    justify-self: auto;
+  }
+  .navbar-menu-container {
+    position: relative;
+    justify-self: auto;
+  }
+  .navbar-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eae5ec;
+    padding: 5px;
+    z-index: 100;
+  }
+  .header ul.navbar-links {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 10px !important;
+    flex-direction: column;
+    align-items: flex-end;
+    white-space: nowrap;
+  }
+  .header ul.navbar-links.open {
+    display: flex !important;
   }
 }
