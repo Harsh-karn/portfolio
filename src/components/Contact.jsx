@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { Github, Mail, Linkedin } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { profile } from '../data/profile';
 
 export default function Contact() {
@@ -85,13 +85,13 @@ export default function Contact() {
           {/* Social Links */}
           <div className="mt-8 flex gap-4">
             <a href={profile.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="p-2 rounded-lg ring-1 ring-gray-200 bg-white/70 hover:bg-purple-50 text-gray-700 transition">
-              <Github size={24} />
+              <FaGithub size={24} />
             </a>
             <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="p-2 rounded-lg ring-1 ring-gray-200 bg-white/70 hover:bg-purple-50 text-gray-700 transition">
-              <Linkedin size={24} />
+              <FaLinkedin size={24} />
             </a>
             <a href={`mailto:${profile.email}`} aria-label="Email" className="p-2 rounded-lg ring-1 ring-gray-200 bg-white/70 hover:bg-purple-50 text-gray-700 transition">
-              <Mail size={24} />
+              <FaEnvelope size={24} />
             </a>
           </div>
         </div>
