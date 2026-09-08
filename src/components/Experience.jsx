@@ -13,7 +13,8 @@ export default function Experience() {
               <span className={`absolute -left-[30px] top-1.5 w-4 h-4 rounded-full shadow ${item.color}`}></span>
               <div className="p-4 rounded-xl bg-white/70 border border-gray-200 backdrop-blur-md hover:shadow-md transition">
                 <h5 className="font-medium text-gray-900">{item.title}</h5>
-                <p className="text-sm text-gray-700 mt-1">
+                {item.subtitle && <p className="text-xs font-semibold text-purple-600 mt-0.5">{item.subtitle}</p>}
+                <p className="text-sm text-gray-700 mt-1.5">
                   {item.description}
                 </p>
               </div>

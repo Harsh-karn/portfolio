@@ -13,5 +13,5 @@ export const profile = {
   email: "harshkarn12345@gmail.com",
   location: "India",
   experienceYears: 2,
-  about: "I’m a Full Stack Developer and AI Engineer passionate about building intelligent, data-driven applications. With expertise in building scalable backend architectures with FastAPI and PostgreSQL, and creating modern frontend interfaces with React and Next.js, I bridge the gap between complex data systems and user experience. My expertise includes building RAG pipelines, autonomous agents, and full-stack solutions."
+  about: "I’m a multidisciplinary dev who lives at the intersection of Full Stack Engineering, AI, and Data Analytics. I’m all about cooking up scalable web apps using Next.js, TypeScript, and Node.js, and seamlessly plugging in advanced LLMs, RAG pipelines, and autonomous agents to build experiences that just hit different. Whether I'm architecting rock-solid backend infrastructures, engineering real-time data solutions, or pulling actionable business insights using Python and modern data tools, my vibe is always focused on solving complex problems with clean, high-impact code. No fluff, just shipping products that work."
 };
