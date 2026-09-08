@@ -1,64 +1,36 @@
-# Harsh Karn — Portfolio Website 🚀
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-A modern, interactive 3D portfolio website built with React, TypeScript, Three.js, and GSAP.
+## Getting Started
 
-**Full Stack Developer | AI Engineer | Data Analyst**
-
-### 🌐 Live Demo: [harsh-karn.vercel.app](https://harsh-karn.vercel.app/)
-
----
-
-![Portfolio Preview](public/images/preview.png)
-
----
-
-## ⚙️ Tech Stack
-
-React • TypeScript • GSAP • Three.js • WebGL • HTML • CSS • JavaScript
-
----
-
-## 🛠️ Getting Started
+First, run the development server:
 
 ```bash
-# Install dependencies
-npm install
-
-# Run the development server
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
----
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 🔗 Connect With Me
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-- **Email:** harshkarn12345@gmail.com
-- **LinkedIn:** [harsh-karn-](https://www.linkedin.com/in/harsh-karn--/)
-- **GitHub:** [Harsh-karn](https://github.com/Harsh-karn)
-- **Reddit:** [heyy_harsh](https://www.reddit.com/user/heyy_harsh/)
-- **Instagram:** [harsh.un.filtered](https://www.instagram.com/harsh.un.filtered/)
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
----
+## Learn More
 
-## ⚠️ Usage Notice
+To learn more about Next.js, take a look at the following resources:
 
-This project is shared for learning purposes only.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Please do NOT:
-- Clone or replicate the full website or design
-- Repost it with minor content changes
-- Use this project for commercial/client work
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-If you use parts of the code, please provide proper credit.
+## Deploy on Vercel
 
-Build your own version — don't just copy.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-— Harsh Karn
-
----
-
-## 📄 License
-
-This project is licensed under the Personal Portfolio License (PPL) v1.0.
-
-See the [LICENSE](LICENSE) file for full details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
