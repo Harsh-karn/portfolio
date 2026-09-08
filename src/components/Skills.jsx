@@ -7,11 +7,12 @@ import {
   SiFastapi, SiNodedotjs, SiExpress, SiGraphql, SiPrisma,
   SiPostgresql, SiMongodb, SiRedis, SiFirebase, SiSupabase,
   SiGooglegemini, SiOpenai, SiAnthropic, SiHuggingface, SiOllama,
-  SiPandas, SiNumpy, SiScikitlearn, SiMicrosoftexcel, SiPowerbi, SiTableau,
+  SiPandas, SiNumpy, SiScikitlearn, SiPowerbi, SiTableau,
   SiDocker, SiGithub, SiVercel, SiKubernetes,
   SiGit, SiPostman, SiCypress
 } from 'react-icons/si';
 import { TbBrain } from 'react-icons/tb';
+import { FaFileExcel } from 'react-icons/fa';
 
 const skillCategories = [
   {
@@ -73,7 +74,7 @@ const skillCategories = [
       { name: "Pandas", icon: SiPandas },
       { name: "NumPy", icon: SiNumpy },
       { name: "Scikit-learn", icon: SiScikitlearn },
-      { name: "Excel", icon: SiMicrosoftexcel },
+      { name: "Excel", icon: FaFileExcel },
       { name: "PowerBI", icon: SiPowerbi },
       { name: "Tableau", icon: SiTableau },
     ]
