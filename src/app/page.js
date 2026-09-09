@@ -6,10 +6,12 @@ import Projects from "../components/Projects";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Preloader from "../components/Preloader";
 
 export default function Home() {
   return (
     <div className="min-h-screen w-full bg-[#f9fafb] relative">
+      <Preloader />
       {/* Diagonal Fade Grid Background */}
       <div
         className="absolute inset-0 z-0"

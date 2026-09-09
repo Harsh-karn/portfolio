@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaReddit, FaInstagram, FaPhoneAlt } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import { profile } from '../data/profile';
 
 export default function Contact() {
@@ -98,14 +99,46 @@ export default function Contact() {
 
         {/* Quick Contact Card */}
         <div className="backdrop-blur-lg bg-white/70 border border-gray-200 rounded-2xl p-8 shadow-lg flex flex-col justify-center">
-          <h5 className="text-xl font-semibold text-gray-900">Quick Contact</h5>
-          <p className="text-sm text-gray-700 mt-3 flex items-center gap-2">
-            📧 <a href={`mailto:${profile.email}`} className="text-purple-600 hover:underline">{profile.email}</a>
-          </p>
+          <div className="mb-8">
+            <h5 className="text-xl font-semibold text-gray-900 mb-4">Direct Contact</h5>
+            <p className="text-base text-gray-700 flex items-center gap-3 mb-3">
+              <FaEnvelope className="text-gray-600" size={18} /> 
+              <a href={`mailto:${profile.email}`} className="text-gray-800 hover:text-purple-600 font-medium transition-colors">{profile.email}</a>
+            </p>
+            <p className="text-base text-gray-700 flex items-center gap-3 mb-3">
+              <FaPhoneAlt className="text-gray-600" size={18} /> 
+              <a href="tel:+919523330382" className="text-gray-800 hover:text-purple-600 font-medium transition-colors">+91 9523330382</a>
+            </p>
+            <p className="text-base text-gray-700 flex items-center gap-3">
+              <FaPhoneAlt className="text-gray-600" size={18} /> 
+              <a href="tel:+919302862656" className="text-gray-800 hover:text-purple-600 font-medium transition-colors">+91 9302862656</a>
+            </p>
+          </div>
+
+          <h5 className="text-xl font-semibold text-gray-900 mb-6 border-t border-gray-200/60 pt-8">Connect via</h5>
           
-          <p className="text-sm text-gray-700 mt-4">
-            Or connect via <span className="text-purple-600 font-medium cursor-pointer"><a href={profile.github} target="_blank" rel="noreferrer">GitHub</a></span> / <span className="text-purple-600 font-medium cursor-pointer"><a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a></span> — links above.
-          </p>
+          <div className="flex flex-col gap-5">
+            <a href={profile.github} target="_blank" rel="noreferrer" className="flex items-center gap-4 text-gray-800 hover:text-purple-600 font-medium transition-colors">
+              <FaGithub size={24} />
+              <span>Harsh-karn</span>
+            </a>
+            <a href={profile.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-4 text-gray-800 hover:text-purple-600 font-medium transition-colors">
+              <FaLinkedin size={24} />
+              <span>harsh-karn--</span>
+            </a>
+            <a href={profile.reddit} target="_blank" rel="noreferrer" className="flex items-center gap-4 text-gray-800 hover:text-purple-600 font-medium transition-colors">
+              <FaReddit size={24} />
+              <span>heyy_harsh</span>
+            </a>
+            <a href={profile.instagram} target="_blank" rel="noreferrer" className="flex items-center gap-4 text-gray-800 hover:text-purple-600 font-medium transition-colors">
+              <FaInstagram size={24} />
+              <span>harsh.un.filtered</span>
+            </a>
+            <a href={profile.x} target="_blank" rel="noreferrer" className="flex items-center gap-4 text-gray-800 hover:text-purple-600 font-medium transition-colors">
+              <FaXTwitter size={24} />
+              <span>heyy_harsh_</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

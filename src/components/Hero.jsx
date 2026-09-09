@@ -51,7 +51,7 @@ export default function Hero() {
             </div>
             <div className="inline-flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-green-400" />
-              <span>{profile.experienceYears}+ years experience</span>
+              <span>Open to work</span>
             </div>
           </motion.div>
         </div>
@@ -68,17 +68,18 @@ export default function Hero() {
             <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-300 via-indigo-300 to-purple-300 opacity-40 blur-3xl" aria-hidden />
 
             <div className="relative p-6 backdrop-blur-xl bg-white/60 border border-gray-200 rounded-2xl">
-              <img src="/avatar.jpg" alt={`${profile.name} avatar`} className="w-36 h-36 object-cover rounded-full mx-auto border-4 border-white shadow-md" />
+              <img src="/avatar.png" alt={`${profile.name} avatar`} className="w-36 h-36 object-cover rounded-full mx-auto border-4 border-white shadow-md" />
               <div className="mt-4 text-center">
                 <div className="font-semibold text-lg">{profile.name}</div>
                 <div className="text-sm text-gray-600 mt-1 space-y-1">
-                  {profile.roles.slice(0,2).map((role, i) => (
+                  {profile.roles.slice(0,3).map((role, i) => (
                     <div key={i}>{role}</div>
                   ))}
                 </div>
               </div>
               <div className="mt-4 flex justify-center gap-3">
                 <a href="#projects" className="px-3 py-1 rounded-md ring-1 ring-gray-200 bg-white/50 backdrop-blur-sm text-sm hover:bg-white transition">Projects</a>
+                <a href="#contact" className="px-3 py-1 rounded-md ring-1 ring-gray-200 bg-white/50 backdrop-blur-sm text-sm hover:bg-white transition">Contact</a>
                 <a href={profile.resume} target="_blank" rel="noopener noreferrer" className="px-3 py-1 rounded-md bg-purple-500 text-white text-sm hover:bg-purple-600 transition">Resume</a>
               </div>
             </div>

@@ -5,7 +5,7 @@ export default function Experience() {
   return (
     <section id="experience" className="max-w-6xl mx-auto px-6 py-12">
       <div className="backdrop-blur-lg bg-white/60 border border-gray-200 rounded-2xl p-8 shadow-lg">
-        <h4 className="text-2xl font-semibold text-gray-900 mb-8">Experience & Education</h4>
+        <h4 className="text-2xl font-semibold text-gray-900 mb-8">Education & Experience</h4>
 
         <div className="relative border-l border-gray-300 pl-6 space-y-8">
           {experience.map((item) => (
