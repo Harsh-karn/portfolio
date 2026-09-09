@@ -23,7 +23,7 @@ export const projects = [
     title: "Twitter Support Agent",
     description: "AI-powered autonomous agent for Twitter that monitors mentions, provides automated customer support, and handles inquiries in real-time.",
     category: "AI / Automation",
-    techStack: ["Python", "Twitter API", "LLMs", "Agentic AI"],
+    techStack: ["Python", "Groq API", "FAISS", "Scikit-Learn", "Pandas", "LLMs", "Agentic AI"],
     github: "https://github.com/Harsh-karn/twitter-support-agent",
     liveLink: null,
     image: "/images/twitter_agent.png",
