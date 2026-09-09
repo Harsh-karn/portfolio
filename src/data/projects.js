@@ -20,6 +20,16 @@ export const projects = [
     featured: true,
   },
   {
+    title: "Twitter Support Agent",
+    description: "AI-powered autonomous agent for Twitter that monitors mentions, provides automated customer support, and handles inquiries in real-time.",
+    category: "AI / Automation",
+    techStack: ["Python", "Twitter API", "LLMs", "Agentic AI"],
+    github: "https://github.com/Harsh-karn/twitter-support-agent",
+    liveLink: null,
+    image: "/images/twitter_agent.png",
+    featured: true,
+  },
+  {
     title: "AI Lead Intake Automation",
     description: "FastAPI pipeline that scrapes company data, enriches it via Gemini API, and exposes results through REST endpoints. Features a robust three-tier fallback mechanism.",
     category: "AI / Automation",
