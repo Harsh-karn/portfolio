@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "Fynlo – UPI Expense Tracker",
-    description: "Built a full-stack expense tracker app using FastAPI, PostgreSQL, and Celery for background jobs. Features async task queuing, JWT auth, and a Kotlin Android client.",
+    description: "Built a full-stack AI finance assistant and expense tracker using FastAPI, PostgreSQL, and Celery for background jobs. Features async task queuing, JWT auth, and a Kotlin Android client.",
     category: "Full Stack / FinTech",
     techStack: ["FastAPI", "PostgreSQL", "Celery", "Kotlin", "Next.js"],
     github: "https://github.com/Harsh-karn/Fynlo",

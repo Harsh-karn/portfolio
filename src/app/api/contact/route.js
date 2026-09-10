@@ -21,8 +21,9 @@ export async function POST(req) {
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER,
+      from: `"${name} (Portfolio)" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_USER, // Send it to yourself
+      replyTo: email,
       subject: `New Portfolio Contact from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     };
