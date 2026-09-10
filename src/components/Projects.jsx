@@ -1,7 +1,108 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { projects } from '../data/projects';
+
+const ProjectCard = ({ p }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isClamped, setIsClamped] = useState(false);
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const checkClamp = () => {
+      if (textRef.current && !isExpanded) {
+        setIsClamped(textRef.current.scrollHeight > textRef.current.clientHeight);
+      }
+    };
+    
+    checkClamp();
+    window.addEventListener('resize', checkClamp);
+    return () => window.removeEventListener('resize', checkClamp);
+  }, [p.description, isExpanded]);
+
+  return (
+    <motion.article
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, scale: 0.95 }}
+      transition={{ duration: 0.3 }}
+      className="rounded-2xl overflow-hidden backdrop-blur-lg bg-white/60 border border-gray-200 shadow-lg hover:shadow-xl transition-shadow flex flex-col"
+    >
+      {/* Screenshot */}
+      <div className="relative h-48 w-full overflow-hidden shrink-0 bg-gray-100">
+        <img
+          src={p.image}
+          alt={`${p.title} screenshot`}
+          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          onError={(e) => { e.currentTarget.src = "/fallback-project.jpg" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <div className="absolute bottom-3 left-3 right-3 text-white">
+          <h4 className="text-lg font-semibold line-clamp-1">{p.title}</h4>
+          <p className="text-xs text-gray-300">{p.category}</p>
+        </div>
+      </div>
+
+      {/* Details */}
+      <div className="p-5 flex flex-col flex-1">
+        <div className="flex-1">
+          <p 
+            ref={textRef}
+            onClick={() => (isClamped || isExpanded) && setIsExpanded(!isExpanded)}
+            className={`text-sm text-gray-700 transition-all duration-300 ${isExpanded ? '' : 'line-clamp-3'} ${(isClamped || isExpanded) ? 'cursor-pointer' : ''}`}
+            title={(isClamped || isExpanded) ? (isExpanded ? "Click to show less" : "Click to read more") : ""}
+          >
+            {p.description}
+          </p>
+          {(isClamped || isExpanded) && (
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="text-xs font-semibold text-purple-600 hover:text-purple-800 mt-1 focus:outline-none transition-colors"
+            >
+              {isExpanded ? "Show less" : "Read more"}
+            </button>
+          )}
+        </div>
+
+        {/* Tags */}
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+          {p.techStack.map((t) => (
+            <span
+              key={t}
+              className="text-xs px-2 py-1 rounded-md bg-white/60 ring-1 ring-gray-200"
+            >
+              {t}
+            </span>
+          ))}
+        </div>
+
+        {/* Links */}
+        <div className="mt-5 flex gap-3">
+          {p.liveLink && (
+            <a
+              href={p.liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-2 rounded-lg bg-purple-500 text-white text-sm shadow hover:opacity-90 flex-1 text-center"
+            >
+              Live Demo
+            </a>
+          )}
+          {p.github && (
+            <a
+              href={p.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-2 rounded-lg ring-1 ring-gray-200 bg-white/70 text-sm hover:bg-white flex-1 text-center"
+            >
+              GitHub
+            </a>
+          )}
+        </div>
+      </div>
+    </motion.article>
+  );
+};
 
 export default function Projects() {
   const [showAll, setShowAll] = useState(false);
@@ -13,71 +114,8 @@ export default function Projects() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <AnimatePresence>
-          {displayedProjects.map((p, idx) => (
-            <motion.article
-              key={p.title}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ duration: 0.3 }}
-              className="rounded-2xl overflow-hidden backdrop-blur-lg bg-white/60 border border-gray-200 shadow-lg hover:shadow-xl transition-shadow flex flex-col"
-            >
-              {/* Screenshot */}
-              <div className="relative h-48 w-full overflow-hidden shrink-0 bg-gray-100">
-                <img
-                  src={p.image}
-                  alt={`${p.title} screenshot`}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  onError={(e) => { e.currentTarget.src = "/fallback-project.jpg" }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 right-3 text-white">
-                  <h4 className="text-lg font-semibold line-clamp-1">{p.title}</h4>
-                  <p className="text-xs text-gray-300">{p.category}</p>
-                </div>
-              </div>
-
-              {/* Details */}
-              <div className="p-5 flex flex-col flex-1">
-                <p className="text-sm text-gray-700 flex-1 line-clamp-3">{p.description}</p>
-
-                {/* Tags */}
-                <div className="mt-4 flex flex-wrap items-center gap-2">
-                  {p.techStack.map((t) => (
-                    <span
-                      key={t}
-                      className="text-xs px-2 py-1 rounded-md bg-white/60 ring-1 ring-gray-200"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Links */}
-                <div className="mt-5 flex gap-3">
-                  {p.liveLink && (
-                    <a
-                      href={p.liveLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3 py-2 rounded-lg bg-purple-500 text-white text-sm shadow hover:opacity-90 flex-1 text-center"
-                    >
-                      Live Demo
-                    </a>
-                  )}
-                  {p.github && (
-                    <a
-                      href={p.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3 py-2 rounded-lg ring-1 ring-gray-200 bg-white/70 text-sm hover:bg-white flex-1 text-center"
-                    >
-                      GitHub
-                    </a>
-                  )}
-                </div>
-              </div>
-            </motion.article>
+          {displayedProjects.map((p) => (
+            <ProjectCard key={p.title} p={p} />
           ))}
         </AnimatePresence>
       </div>
